@@ -1,6 +1,6 @@
 <section class="contact-edit">
   <h2>{{contact._id ? 'Edit':'Add'}} contact:</h2>
-  <img *ngIf="contact._id" src="https://i.pravatar.cc/150?u={{ contact.email }}" />
+  <img src="{{ contact._id ? 'https://i.pravatar.cc/150?u={{ contact.email }}' : 'assets/contact.png'}}" />
   <form (ngSubmit)="onSaveContact()">
     <p *ngIf="contact._id" class="id">ID: {{ contact._id }}</p>
 
