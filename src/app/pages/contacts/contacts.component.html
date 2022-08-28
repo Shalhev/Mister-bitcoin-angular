@@ -1,0 +1,5 @@
+<section class="filter-bar-container">
+    <contact-filter></contact-filter>
+    <button [routerLink]="['/edit']" class="add-btn capitalize button">Add contact</button>
+    <contact-list [contacts]="contacts$ | async"></contact-list>
+</section>

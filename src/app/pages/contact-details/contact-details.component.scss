@@ -1,0 +1,36 @@
+.contact-details {
+    // display: flex;
+    text-align: center;
+    margin: 50px auto;
+
+    h1 {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    img {
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin: 5px auto;
+    }
+
+    button {
+        padding: 8px 15px;
+        border-radius: 8px;
+        border: none;
+        background-color: #bbc;
+        margin: 45px 5px 0px 5px;
+        cursor: pointer;
+
+        &.edit-btn {
+            background-color: #ffc107;
+        }
+    }
+}
