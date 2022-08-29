@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'edit/:id', component: ContactEditComponent, resolve: { contact: ContactResolver } },
   { path: 'edit', component: ContactEditComponent },
   { path: 'home', component: HomePageComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
 @NgModule({
