@@ -2,7 +2,7 @@
   <ng-container *ngIf="user$ | async as User">
     <div class="welcome">Welcome</div>
     <h2>Hello {{ user.name }}!</h2>
-    <img src="/assets/bitcoin.png" alt="" />
+    <img src="./assets/bitcoin.png"/>
     <p>Coins: ${{ user.coins }} | {{ rate }} BTC</p>
   </ng-container>
   <ng-container *ngIf="!user">
@@ -14,7 +14,6 @@
         <button [routerLink]="['/signup']" class="signup-btn">Signup</button>
       </div>
       <div class="right slide-top">
-        <!-- <img src="assets/hero.png"> -->
       </div>
     </section>
   </ng-container>
