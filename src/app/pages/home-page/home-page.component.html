@@ -1,11 +1,21 @@
 <section class="home-page">
-  <div class="welcome">Welcome</div>
   <ng-container *ngIf="user$ | async as User">
+    <div class="welcome">Welcome</div>
     <h2>Hello {{ user.name }}!</h2>
-    <img src="../../../assets/bitcoin.png" alt="" />
+    <img src="/assets/bitcoin.png" alt="" />
     <p>Coins: ${{ user.coins }} | {{ rate }} BTC</p>
   </ng-container>
   <ng-container *ngIf="!user">
-    <h3><a [routerLink]="['/signup']">Click here to signup</a></h3>
+    <section class="hero-container">
+
+      <div class="left">
+        <div class="title">Lorem & ipsum dolor sit amet</div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat aut commodi fugit, dicta maxime nam amet voluptate vitae. Quisquam ut natus recusandae deleniti architecto.</p>
+        <button [routerLink]="['/signup']" class="signup-btn">Signup</button>
+      </div>
+      <div class="right slide-top">
+        <!-- <img src="assets/hero.png"> -->
+      </div>
+    </section>
   </ng-container>
 </section>

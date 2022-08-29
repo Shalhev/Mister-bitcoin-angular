@@ -1,8 +1,9 @@
 <header>
-  <h1 [routerLink]="['/home']" class="logo">Mister Bitcoin</h1>
+  <h1 [routerLink]="['/home']" class="logo">Mister<span>Bitcoin</span>.</h1>
 
   <ul class="links flex clean-list">
-    <li><a [routerLink]="['/contacts']">Contacts</a></li>
-    <li><a [routerLink]="['/signup']">Signup</a></li>
+    <li [routerLink]="['/home']">Home</li>
+    <li [routerLink]="['/contacts']">Contacts</li>
+    <li [routerLink]="['/signup']">Signup</li>
   </ul>
 </header>

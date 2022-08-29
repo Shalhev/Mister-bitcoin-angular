@@ -4,11 +4,16 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
-    background-color: #F0F2F5;
-    color: #000000;
+    // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    // background-color: #F0F2F5;
+    color: #ffffff;
     margin: 0 auto;
     height: 100vh;
+    background: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
@@ -48,4 +53,25 @@ p {
 a {
     color: #23272A;
     text-decoration: none;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+.signup-btn {
+    color: #010716;
+    background: #FFBA00;
+    text-transform: uppercase;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #FFBA00;
+    transition: 200ms;
+
+    &:hover {
+        color: #FFBA00;
+        background: none;
+    }
 }
