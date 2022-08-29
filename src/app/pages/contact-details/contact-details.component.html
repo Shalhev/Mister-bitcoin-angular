@@ -2,9 +2,9 @@
   <h1>Contact:</h1>
   <img src="https://i.pravatar.cc/150?u={{ contact.email }}" />
   <h3 class="fullname">{{ contact.name }}</h3>
-  <p class="id">ID: {{ contact._id }}</p>
-  <p class="phone">Phone: {{ contact.phone }}</p>
-  <p class="email">Email: {{ contact.email }}</p>
+  <p class="id"><span>ID:</span> {{ contact._id }}</p>
+  <p class="phone"><span>Phone:</span> {{ contact.phone }}</p>
+  <p class="email"><span>Email:</span> {{ contact.email }}</p>
   <button (click)="onBack()">Back</button>
   <button [routerLink]="['/edit', contact._id]" class="edit-btn">Edit</button>
 </section>

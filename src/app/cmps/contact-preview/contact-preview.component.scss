@@ -9,13 +9,20 @@
     padding: 25px;
     border-radius: 5px;
     transition: all 100ms ease-in-out;
-
     box-shadow: 0px 0px 3px #7b7b7b;
     transition: 350ms;
-    
+    position: relative;
     &:hover{
         cursor: pointer;
-        box-shadow: 0px 0px 15px #ffbb00;
+        box-shadow: 0px 0px 10px #ffbb00;
+
+        .click{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        img{
+            border: 1px solid #ffbb00;
+        }
     }
 
     img {
@@ -29,5 +36,16 @@
     }
     .fullname{
         font-weight: 700;
+    }
+    .click{
+        position: absolute;
+        opacity: 0;
+        transition: 300ms;
+        background-color: #ffbb00;
+        border-radius: 5px;
+        padding: 2px 16px;
+        top: 60%;
+        color: #000;
+        transform: translateY(60px);
     }
 }

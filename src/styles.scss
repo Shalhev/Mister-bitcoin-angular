@@ -39,6 +39,12 @@ body {
 .center {
     justify-content: center;
 }
+.align-center {
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
 
 h1,
 h2,
@@ -73,5 +79,9 @@ button {
     &:hover {
         color: #FFBA00;
         background: none;
+    }
+    &:active{
+        color: #000;
+        background-color: #FFF;
     }
 }
